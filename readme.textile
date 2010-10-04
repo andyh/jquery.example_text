@@ -17,9 +17,9 @@ h3. Options
 
 The default and available options are:
 
-*example_text:* -- The example text you want to appear; default is "Please enter a value"
-*example_text_colour*: -- The colour of the example text, any valid css colour value; default is #b2adad
-*normal_text_colour*:-- The colour of the normal text, any valid css colour valuel default is #000
+*example_text:* - The example text you want to appear; default is "Please enter a value"
+*example_text_colour*: - The colour of the example text, any valid css colour value; default is #b2adad
+*normal_text_colour*: - The colour of the normal text, any valid css colour valuel default is #000
 
 If you want to change them on a project basis ,you can change them via:
 
