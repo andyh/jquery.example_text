@@ -1,0 +1,32 @@
+h1. Simple jQuery plugin for adding example text
+
+This is a super simple plugin which just makes it easy to add some example
+text to an (input) element and control the colour of it via css.
+
+h2. Usage
+
+Just include the plugin .js file ensure you have a suitable element, .e.g an input field
+
+@<input id="firstname"></input>@
+
+Then in your js, just call
+
+@$("#firstname").example_text();@
+
+h3. Options
+
+The default and available options are:
+
+*example_text:* -- The example text you want to appear; default is "Please enter a value"
+*example_text_colour*: -- The colour of the example text, any valid css colour value; default is #b2adad
+*normal_text_colour*:-- The colour of the normal text, any valid css colour valuel default is #000
+
+If you want to change them on a project basis ,you can change them via:
+
+@$.fn.example_text.defaults.example_text = 'Make it say this';@
+
+Note you don't have to do this inside a "ready" block.
+
+Alternatively you can alter it on a per-item basis, e.g.
+
+@$("#firstname").example_text({example_text: 'Make it say this'});@
