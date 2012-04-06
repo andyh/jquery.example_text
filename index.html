@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Jquery.example_text : A simple jQuery plugin to add example text to input elements" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Jquery.example_text</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/andyh/jquery.example_text">Fork Me on GitHub</a>
+
+          <h1 id="project_title">Jquery.example_text</h1>
+          <h2 id="project_tagline">A simple jQuery plugin to add example text to input elements</h2>
+
+          <section id="downloads">
+            <a class="zip_download_link" href="https://github.com/andyh/jquery.example_text/zipball/master">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="https://github.com/andyh/jquery.example_text/tarball/master">Download this project as a tar.gz file</a>
+          </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Simple jQuery plugin for adding example text</h1>
+
+<p>This is a super simple plugin which just makes it easy to add some example
+text to an (input) element and control the colour of it via css.</p>
+
+<h2>Usage</h2>
+
+<p>Just include the plugin .js file ensure you have a suitable element, .e.g an input field</p>
+
+<p><code>
+&lt;input id="firstname"&gt;&lt;/input&gt;
+</code></p>
+
+<p>Then in your js, just call</p>
+
+<p><code>
+$("#firstname").example_text();
+</code></p>
+
+<h3>Options</h3>
+
+<p>The default and available options are:</p>
+
+<p><em><strong>example_text:</strong></em> - The example text you want to appear; default is "Please enter a value"</p>
+
+<p><em><strong>example_text_colour:</strong></em> - The colour of the example text, any valid css colour value; default is #b2adad</p>
+
+<p><em><strong>normal_text_colour:</strong></em> - The colour of the normal text, any valid css colour valuel default is #000</p>
+
+<p>If you want to change them on a project basis ,you can change them via:</p>
+
+<p><code>
+$.fn.example_text.defaults.example_text = 'Make it say this';
+</code></p>
+
+<p>Note you don't have to do this inside a "ready" block.</p>
+
+<p>Alternatively you can alter it on a per-item basis, e.g.</p>
+
+<p><code>
+$("#firstname").example_text({example_text: 'Make it say this'});
+</code></p>
+
+<h3>Authors and Contributors</h3>
+
+<p>Andy Henson (<a href="https://github.com/andyh" class="user-mention">@andyh</a>)</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Jquery.example_text maintained by <a href="https://github.com/andyh">andyh</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
